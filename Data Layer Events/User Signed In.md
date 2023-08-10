@@ -18,7 +18,7 @@ appEventData.push({
 ## Variable Definitions
 
 |Path|Type|Description|Example|
-| --- | --- | --- | 
+| --- | --- | --- | --- |
 |user.event|string|Static value|login, logout|
 |user.loginStatus|string|Describes the login state of the user|logged in, logged out, guest|
 
