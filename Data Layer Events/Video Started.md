@@ -8,7 +8,7 @@ window.appEventData = window.appEventData || [];
 appEventData.push({
   "event": "Video Started",
     "video": {
-        "eventName": "<eventName>",
+        "eventName": "video_start",
         "videoName": "<videoName>",
         "videoURL": "<videoURL>"
     }
@@ -17,11 +17,11 @@ appEventData.push({
 
 ## Variable Definitions
 
-|Path|Type|Description|Example|Pattern|Min Length|Max Length|Minimum|Maximum|Multiple Of|
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|video.eventName|string|Static value, see examples|video\_start, video\_complete|||||||
-|video.videoName|string|Video Name|Twitch\_FPS, Age of Empires, Halo|||||||
-|video.videoURL|string|url of video||||||||
+|Path|Type|Description|Example
+| --- | --- | --- | --- |
+|video.eventName|string|Static value, see examples|video\_start|
+|video.videoName|string|Video Name|Meechie's Story|
+|video.videoURL|string|URL of video|https://www.youtube.com/embed/lpprkE_2eNs?rel=0|
 
 
 
