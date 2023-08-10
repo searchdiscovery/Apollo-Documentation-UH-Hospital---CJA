@@ -27,4 +27,4 @@ appEventData.push({
 
 
 
-
+<p><img title="RFI Complete" src="https://github.com/searchdiscovery/Apollo-Documentation-UH-Hospital---CJA/blob/main/images/Youtube%20Complete.png?raw=true" alt="" /></p>
