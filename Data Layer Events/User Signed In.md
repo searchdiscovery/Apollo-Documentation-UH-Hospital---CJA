@@ -1,6 +1,7 @@
 # User Signed In
 
 ### 
+When the user successfully authenticates.
 
 ## Javascript Code
 ```js
@@ -8,7 +9,7 @@ window.appEventData = window.appEventData || [];
 appEventData.push({
   "event": "User Signed In",
     "user": {
-        "event": "<event>",
+        "event": "login",
         "loginStatus": "<loginStatus>"
     }
 });
@@ -16,10 +17,10 @@ appEventData.push({
 
 ## Variable Definitions
 
-|Path|Type|Description|Example|Pattern|Min Length|Max Length|Minimum|Maximum|Multiple Of|
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|user.event|string|Static value|login, logout|||||||
-|user.loginStatus|string|Describes the login state of the user|logged in, logged out, guest|||||||
+|Path|Type|Description|Example|
+| --- | --- | --- | 
+|user.event|string|Static value|login, logout|
+|user.loginStatus|string|Describes the login state of the user|logged in, logged out, guest|
 
 
 
