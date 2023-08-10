@@ -47,6 +47,6 @@ appEventData.push({
 |linkInfo.linkText|string|Text value of the anchor tag link|Click Here, Pay Now, Read More, Learn More|||||||
 |linkInfo.linkURL|string|This will include the href link value|https:\/\/www.uhhospitals.org\/patients-and-visitors\/billing-insurance-and-medical-records\/pay-my-bill|||||||
 
-
+<p><img title="" src="https://github.com/searchdiscovery/Apollo-Documentation-UH-Hospital---CJA/blob/main/images/CTA%20Link%20Click.png?raw=true" alt="" /></p>
 
 
