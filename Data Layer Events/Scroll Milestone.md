@@ -1,7 +1,9 @@
 # Scroll Milestone
 
 ### 
-When the user scrolls down the page
+When the user scrolls down the page.
+
+This will only be added to specific pages to cut down on server calls.
 
 ## Javascript Code
 ```js
