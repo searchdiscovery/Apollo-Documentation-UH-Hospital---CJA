@@ -1,6 +1,6 @@
 # Onsite Search Succeeded
 
-### This event is part of the page load sequence, including virtual page loads in the case of single page apps, and must be pushed between the `Page Load Started` and `Page Load Completed` events.
+When the results of search appear on the screen
 
 ## Javascript Code
 ```js
@@ -9,7 +9,7 @@ appEventData.push({
   "event": "Onsite Search Succeeded",
     "searchResults": {
         "contentType": "<contentType>",
-        "eventName": "<eventName>",
+        "eventName": "view_search_results",
         "resultCount": <resultCount>,
         "searchRefinements": "<searchRefinements>",
         "searchTerm": "<searchTerm>"
@@ -19,13 +19,13 @@ appEventData.push({
 
 ## Variable Definitions
 
-|Path|Type|Description|Example|Pattern|Min Length|Max Length|Minimum|Maximum|Multiple Of|
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|searchResults.contentType|string|When used with the "search" event, this attribute will distinguish between "Site Search", "Treatments & Conditions", "Diagnostics", "Find a Doctor", "Prescription Drugs", "Clinical Trials", "Medical Education" and "Find a Location".|"Site Search", "Treatments & Conditions", "Diagnostics", "Find a Doctor", "Prescription Drugs", "Clinical Trials", "Medical Education", "Find a Location"|||||||
-|searchResults.eventName|string|static value, see examples|view\_search\_results, search|||||||
-|searchResults.resultCount|number|The number of search results returned||||||||
-|searchResults.searchRefinements|string|The refinements values the user added to filter search||||||||
-|searchResults.searchTerm|string|Term the user used in search||||||||
+|Path|Type|Description|Example|
+| --- | --- | --- | --- |
+|searchResults.contentType|string|When used with the "search" event, this attribute will distinguish between "Site Search", "Treatments & Conditions", "Diagnostics", "Find a Doctor", "Prescription Drugs", "Clinical Trials", "Medical Education" and "Find a Location".|"Site Search", "Treatments & Conditions", "Diagnostics", "Find a Doctor", "Prescription Drugs", "Clinical Trials", "Medical Education", "Find a Location"|
+|searchResults.eventName|string|static value, see examples|view\_search\_results|
+|searchResults.resultCount|number|The number of search results returned|2, 300, 1000|
+|searchResults.searchRefinements|string|The refinements values the user added to filter search|"Insursance:Anthem\|Treats:adults,seniors"|
+|searchResults.searchTerm|string|Term the user used in search|"cancer", "dr. smith"|
 
 
 
