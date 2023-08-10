@@ -24,4 +24,4 @@ appEventData.push({
 
 
 
-
+<p><img title="RFI Complete" src="https://github.com/searchdiscovery/Apollo-Documentation-UH-Hospital---CJA/blob/main/images/Schedule%20Me%20Now.png?raw=true" alt="" /></p>
