@@ -1,6 +1,6 @@
 # CTA Link Clicked
 
-User clicks main CTA request info link. These events will be automatically detected and fired for any `<a>` tag clicked by a user ad long as the existing data-gtm attribute is available on the <a> tag: 
+User clicks main CTA request info link. These events will be automatically detected and fired for any `<a>` tag clicked by a user ad long as the existing data-eventName attribute is available on the <a> tag: 
   
   `data-eventName` 
 
