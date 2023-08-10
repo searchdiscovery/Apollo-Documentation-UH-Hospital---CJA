@@ -8,11 +8,16 @@ window.appEventData = window.appEventData || [];
 appEventData.push({
   "event": "Onsite Search Succeeded",
     "searchResults": {
-        "contentType": "<contentType>",
         "eventName": "view_search_results",
-        "resultCount": <resultCount>,
-        "searchRefinements": "<searchRefinements>",
-        "searchTerm": "<searchTerm>"
+        "contentType": "<contentType>",
+        "searchRefinements": [
+            {
+              "filter": "<filter>",
+              "filter": "<filter>"
+            }
+        ],
+        "searchTerm": "<searchTerm>",
+        "resultCount": <resultCount>
     }
 });
 ```
@@ -21,12 +26,12 @@ appEventData.push({
 
 |Path|Type|Description|Example|
 | --- | --- | --- | --- |
-|searchResults.contentType|string|When used with the "search" event, this attribute will distinguish between "Site Search", "Treatments & Conditions", "Diagnostics", "Find a Doctor", "Prescription Drugs", "Clinical Trials", "Medical Education" and "Find a Location".|"Site Search", "Treatments & Conditions", "Diagnostics", "Find a Doctor", "Prescription Drugs", "Clinical Trials", "Medical Education", "Find a Location"|
 |searchResults.eventName|string|static value, see examples|view\_search\_results|
-|searchResults.resultCount|number|The number of search results returned|2, 300, 1000|
-|searchResults.searchRefinements|string|The refinements values the user added to filter search|"Insursance:Anthem\|Treats:adults,seniors"|
+|searchResults.contentType|string|When used with the "search" event, this attribute will distinguish between "Site Search", "Treatments & Conditions", "Diagnostics", "Find a Doctor", "Prescription Drugs", "Clinical Trials", "Medical Education" and "Find a Location".|"Site Search", "Treatments & Conditions", "Diagnostics", "Find a Doctor", "Prescription Drugs", "Clinical Trials", "Medical Education", "Find a Location"|
+|searchResults.searchRefinements[n].filter|string|Describes the the filter types and filter detail applied on searches|<br>Insursance:Anthem</br><br>Treats:adults,seniors</br>|
 |searchResults.searchTerm|string|Term the user used in search|"cancer", "dr. smith"|
+|searchResults.resultCount|number|The number of search results returned|2, 300, 1000|
 
 
 
-
+<p><img title="RFI Complete" src="https://github.com/searchdiscovery/Apollo-Documentation-UH-Hospital---CJA/blob/main/images/View%20Search%20Results.png?raw=true" alt="" /></p>
