@@ -27,4 +27,8 @@ appEventData.push({
 
 
 
+## Form Error
+<p><img title="RFI Complete" src="https://github.com/searchdiscovery/Apollo-Documentation-UH-Hospital---CJA/blob/main/images/Form%20Error.png?raw=true" alt="" /></p>
 
+## Page Error
+<p><img title="RFI Complete" src="https://github.com/searchdiscovery/Apollo-Documentation-UH-Hospital---CJA/blob/main/images/Page%20Error.png?raw=true" alt="" /></p>
