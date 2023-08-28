@@ -1,7 +1,7 @@
 # Form Submitted
 
 ### 
-Complete step 7 of schedulemenow flow.
+OUT OF SCOPE for initial project. If another form (non epic) needs submit tracking using this data layer event. 
 
 ## Javascript Code
 ```js
