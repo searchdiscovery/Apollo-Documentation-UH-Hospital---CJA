@@ -6,18 +6,22 @@ When the results of search appear on the screen
 ```js
 window.appEventData = window.appEventData || [];
 appEventData.push({
-  "event": "Onsite Search Succeeded",
+    "event": "Onsite Search Succeeded",
     "searchResults": {
         "eventName": "view_search_results",
         "contentType": "<contentType>",
-        "searchRefinements": [
-            {
-              "filter": "<filter>",
-              "filter": "<filter>"
-            }
-        ],
+        "searchRefinements": [{
+            "location": "<filter>",
+            "insurance": "<filter>",
+            "appointmentDate": "<filter>",
+            "language": "<filter>",
+            "providerGender": "<filter>",
+            "treats": "<filter>",
+            "newPatients": "<filter>",
+            "onlineScheduling": "<filter>"
+        }],
         "searchTerm": "<searchTerm>",
-        "resultCount": <resultCount>
+        "resultCount": < resultCount >
     }
 });
 ```
@@ -28,7 +32,14 @@ appEventData.push({
 | --- | --- | --- | --- |
 |searchResults.eventName|string|static value, see examples|view\_search\_results|
 |searchResults.contentType|string|When used with the "search" event, this attribute will distinguish between "Site Search", "Treatments & Conditions", "Diagnostics", "Find a Doctor", "Prescription Drugs", "Clinical Trials", "Medical Education" and "Find a Location".|"Site Search", "Treatments & Conditions", "Diagnostics", "Find a Doctor", "Prescription Drugs", "Clinical Trials", "Medical Education", "Find a Location"|
-|searchResults.searchRefinements[n].filter|string|Describes the the filter types and filter detail applied on searches|<br>Insursance:Anthem</br><br>Treats:adults,seniors</br>|
+|searchResults.searchRefinements[n].location|string|String containing the zip code|location:44101|
+|searchResults.searchRefinements[n].insurance|string|String containing the selected insurance dropdown value|insursance:Anthem|
+|searchResults.searchRefinements[n].appointmentDate|string|String containing the appointment date|appointmentDate:12-2-2023|
+|searchResults.searchRefinements[n].language|string|String containing the selected dropdown value|language:spanish|
+|searchResults.searchRefinements[n].providerGender|string| String containing the selected filters |providerGender:Female|
+|searchResults.searchRefinements[n].treats|string|String containing the selected filters |treats:adults,seniors|
+|searchResults.searchRefinements[n].newPatients|string|set to undefined if not selected|newPatients:yes|
+|searchResults.searchRefinements[n].onlineScheduling|string|set to undefined if not selected |onlineScheduling:yes|
 |searchResults.searchTerm|string|Term the user used in search|"cancer", "dr. smith"|
 |searchResults.resultCount|number|The number of search results returned|2, 300, 1000|
 
