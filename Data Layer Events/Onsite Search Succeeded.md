@@ -18,7 +18,8 @@ appEventData.push({
             "providerGender": "<filter>",
             "treats": "<filter>",
             "newPatients": "<filter>",
-            "onlineScheduling": "<filter>"
+            "onlineScheduling": "<filter>",
+            "requestAnAppointment":"<filter>"
         }],
         "searchTerm": "<searchTerm>",
         "resultCount": < resultCount >
@@ -40,6 +41,7 @@ appEventData.push({
 |searchResults.searchRefinements[n].treats|string|String containing the selected filters |treats:adults,seniors|
 |searchResults.searchRefinements[n].newPatients|string|set to undefined if not selected|newPatients:yes|
 |searchResults.searchRefinements[n].onlineScheduling|string|set to undefined if not selected |onlineScheduling:yes|
+|searchResults.searchRefinements[n].requestAnAppointment|string|set to undefined if not selected |requestAnAppointment:yes|
 |searchResults.searchTerm|string|Term the user used in search|"cancer", "dr. smith"|
 |searchResults.resultCount|number|The number of search results returned|2, 300, 1000|
 
